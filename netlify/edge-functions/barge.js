@@ -1,5 +1,5 @@
 export default async (request) => {
-  return new Response(request.url, {
+  return new Response("hahaha", {
     headers: { "content-type": "text/html" },
   });
 };
