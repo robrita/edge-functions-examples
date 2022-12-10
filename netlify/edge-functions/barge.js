@@ -4,5 +4,9 @@ export default async (request) => {
 
   const redirectUrl = `https://ttt.c0m.workers.dev/bargeForm?date=${date}&t=${Date.now()}`;
   // return Response.redirect(redirectUrl, 302);
-  return new Response(redirectUrl);
+
+  return new Response(redirectUrl, {
+    headers: { "content-type": "text/html" },
+  });
+
 };
