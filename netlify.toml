@@ -30,6 +30,10 @@
   function = "hello"
 
 [[edge_functions]]
+  path = "/barge"
+  function = "barge"
+
+[[edge_functions]]
   path = "/geolocation"
   function = "geolocation"
 
