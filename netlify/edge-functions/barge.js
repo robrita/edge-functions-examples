@@ -1,4 +1,4 @@
-export default (request) => {
+export default async (request) => {
   const url = new URL(request.url);
   const date = url.searchParams.get('date') || '';
 
